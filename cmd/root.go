@@ -18,7 +18,7 @@ var rootCmd = &cobra.Command{
 	Short: "Help to create timeline in html format.",
 	Long:  `Help to create timeline in html format.`,
 	Example: `
-  timelint generate csv
+  timeline generate csv
   timeline create -i sample.csv -o output.html
 `,
 }

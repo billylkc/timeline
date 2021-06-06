@@ -85,6 +85,12 @@ To be added
 1. Support toml format
 1. Add future event in the sample csv
 1. Review css
+1. Break task by week
+1. Insert ongoing tasks in sample
+
+
+## Reference
+Google Timeline Chart - [Here](https://developers.google.com/chart/interactive/docs/gallery/timeline)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
