@@ -1,0 +1,93 @@
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+
+  google.charts.load("current", {packages:["timeline"]});
+  google.charts.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var container = document.getElementById('example2.1');
+    var chart = new google.visualization.Timeline(container);
+    var dataTable = new google.visualization.DataTable();
+
+    dataTable.addColumn({ type: 'string', id: 'Seq' });
+    dataTable.addColumn({ type: 'string', id: 'Title' });
+    dataTable.addColumn({ type: 'date', id: 'Start' });
+    dataTable.addColumn({ type: 'date', id: 'End' });
+
+    dataTable.addRows([
+    {{ range .Timeline }}
+	  [ '{{ .Seq }}', '{{ .Title }}', {{ .Start }}, {{ .End }} ],
+    {{ end }}
+    ]);
+
+    var options = {
+      timeline: { showRowLabels: true, colorByRowLabel: true, }
+    };
+
+    chart.draw(dataTable, options);
+  }
+</script>
+
+<style>
+table,
+td {
+    border: 1px solid #333;
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
+</style>
+
+<div><h1>Tasks</h1></div>
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="4">Finished Tasks</th>
+        </tr>
+	<tr>
+            <td>#</td>
+            <td>Task</td>
+            <td>Date</td>
+            <td>Duration</td>
+        </tr>
+    </thead>
+    <tbody>
+
+        {{ range .Done }}
+        <tr>
+            <td>{{ .Seq }}</td>
+            <td>{{ .Title }}</td>
+            <td align="right">{{ .StartD.Format "2/1" }} - {{ .EndD.Format "2/1" }}</td>
+            <td align="right">{{ .Duration }}</td>
+        </tr>
+	{{ end }}
+
+    </tbody>
+      <thead>
+        <tr>
+            <th colspan="4">Ongoing Tasks</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        {{ range .Ongoing }}
+        <tr>
+            <td>{{ .Seq }}</td>
+            <td>{{ .Title }}</td>
+            <td align="right">{{ .StartD.Format "2/1" }} - {{ .EndD.Format "2/1" }}</td>
+	    <td align="right">{{ .Duration }}</td>
+        </tr>
+	{{ end }}
+
+    </tbody>
+</table>
+
+
+<br/><br/>
+
+<div><h1>Project Timeline</h1></div>
+<div id="example2.1" style="height: 800px;"></div>
