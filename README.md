@@ -71,7 +71,7 @@ go install .
    `
 
 1. Output file <br/>
-   (To be added)
+   ![Timeline](demo/timeline.png)
 
 # Supported Format
 - csv
@@ -79,7 +79,8 @@ go install .
 - toml (maybe)
 
 # Demo
-To be added
+![Timeline](demo/timeline.gif)
+
 
 # To do
 1. Support toml format

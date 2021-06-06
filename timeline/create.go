@@ -168,7 +168,7 @@ func convertDate(d string) time.Time {
 // calcDuration calculates no of working days (5 days a week, no handling on holidays) between start and end
 func calcDuration(start, end time.Time) int {
 
-	if end.Before(start) || end.Equal(start) {
+	if end.Before(start) {
 		return 0
 	}
 
