@@ -13,7 +13,8 @@ Timeline helps to quickly generate a Gantt chart with Google Timeline js library
 There have been times that I wish I could spend less effort on discussing and modifying the timeline. This tool is just for that.
 
 <br/>
-It provides 3 features
+It provides 3 features <br/>
+
 1. Create a Gantt chart
 1. List the **finished** and **ongoing** tasks
 1. Calculate the man-day (exclude Sun and Sat)
