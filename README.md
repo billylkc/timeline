@@ -12,9 +12,10 @@ Timeline helps to quickly generate a Gantt chart with Google Timeline js library
 
 There have been times that I wish I could spend less effort on discussing and modifying the timeline. This tool is just for that.
 
-It provides only 3 features
+<br/>
+It provides 3 features
 - Create a Gantt chart
-- List the **finishd** and **ongoing** tasks
+- List the **finished** and **ongoing** tasks
 - Calculate the man-day (exclude Sun and Sat)
 
 
@@ -29,7 +30,7 @@ Generally it is not a good idea to download the binary file directly from anywhe
 | Linux (Ubuntu)   | [Here](bin/timeline)     |
 
 ### Source
-Or you can just install in with Go install from the source
+Or you can just install it with `go install` from the source
 
 ```
 git clone https://github.com/billylkc/timeline
@@ -38,7 +39,7 @@ go install .
 ```
 
 # Usage
-1. Generate a sample input file - sample.csv
+1. Generate a sample input file - sample.csv <br/>
    `
    timeline generate csv
    `
@@ -55,13 +56,13 @@ go install .
    4,Present,2021-06-10,2021-06-10
    ```
 
-1. Create the timeline
+1. Create the timeline html file <br/>
    `
    timeline create -i sample.csv -o output.html
    `
 
-1. Output file
-   [![An old rock in the desert](/assets/images/shiprock.jpg "Shiprock, New Mexico by Beau Rogers")](https://www.flickr.com/photos/beaurogers/31833779864/in/photolist-Qv3rFw-34mt9F-a9Cmfy-5Ha3Zi-9msKdv-o3hgjr-hWpUte-4WMsJ1-KUQ8N-deshUb-vssBD-6CQci6-8AFCiD-zsJWT-nNfsgB-dPDwZJ-bn9JGn-5HtSXY-6CUhAL-a4UTXB-ugPum-KUPSo-fBLNm-6CUmpy-4WMsc9-8a7D3T-83KJev-6CQ2bK-nNusHJ-a78rQH-nw3NvT-7aq2qf-8wwBso-3nNceh-ugSKP-4mh4kh-bbeeqH-a7biME-q3PtTf-brFpgb-cg38zw-bXMZc-nJPELD-f58Lmo-bXMYG-bz8AAi-bxNtNT-bXMYi-bXMY6-bXMYv)
+1. Output file <br/>
+   (To be added)
 
 # Supported Format
 - csv
