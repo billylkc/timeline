@@ -66,7 +66,7 @@ go install .
    3,Evaluate Model,2021-03-05,2021-03-20
    4,Present,2021-06-10,2021-06-10
    ```
-   <br/><br/>
+   <br/>
 
 1. Create the timeline html file <br/>
    `
@@ -86,7 +86,6 @@ go install .
 - toml (maybe)
 
 # Demo
-<br/>
 | ![Timeline](demo/timeline.gif) |
 |--------------------------------|
 <br/><br/>
