@@ -40,6 +40,14 @@ go install .
 ```
 
 # Usage
+0. Generate help on the commands with `-h` or `--help`<br/>
+   Inside `./bin` directory, call program with `timeline` on Linux or `timeline.exe` on Windows.
+   ```
+   timeline -h
+   timeline generate -h
+   timeline create -h
+   ```
+
 1. Generate a sample input file - sample.csv <br/>
    `
    timeline generate csv
