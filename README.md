@@ -47,11 +47,13 @@ go install .
    timeline generate -h
    timeline create -h
    ```
+   <br/>
 
 1. Generate a sample input file - sample.csv <br/>
    `
    timeline generate csv
    `
+   <br/>
 
 1. Update the content in the csv file
    ```
@@ -64,14 +66,18 @@ go install .
    3,Evaluate Model,2021-03-05,2021-03-20
    4,Present,2021-06-10,2021-06-10
    ```
+   <br/>
 
 1. Create the timeline html file <br/>
    `
    timeline create -i sample.csv -o output.html
    `
+   <br/>
 
-1. Output file <br/>
-   ![Timeline](demo/timeline.png)
+1. Output file <br/><br/>
+   |![Timeline](demo/timeline.png)|
+   -
+   <br/>
 
 # Supported Format
 - csv
