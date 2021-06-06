@@ -66,19 +66,19 @@ go install .
    3,Evaluate Model,2021-03-05,2021-03-20
    4,Present,2021-06-10,2021-06-10
    ```
-   <br/>
+   <br/><br/>
 
 1. Create the timeline html file <br/>
    `
    timeline create -i sample.csv -o output.html
    `
-   <br/>
+   <br/><br/>
 
 1. Output file <br/><br/>
    | ![Timeline](demo/timeline.png) |
    |--------------------------------|
 
-   <br/>
+   <br/><br/>
 
 # Supported Format
 - csv
@@ -86,7 +86,10 @@ go install .
 - toml (maybe)
 
 # Demo
-![Timeline](demo/timeline.gif)
+<br/>
+| ![Timeline](demo/timeline.gif) |
+|--------------------------------|
+<br/><br/>
 
 
 # To do
