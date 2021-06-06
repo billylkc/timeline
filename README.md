@@ -14,9 +14,9 @@ There have been times that I wish I could spend less effort on discussing and mo
 
 <br/>
 It provides 3 features
-- Create a Gantt chart
-- List the **finished** and **ongoing** tasks
-- Calculate the man-day (exclude Sun and Sat)
+1. Create a Gantt chart
+1. List the **finished** and **ongoing** tasks
+1. Calculate the man-day (exclude Sun and Sat)
 
 
 # Installation
