@@ -75,8 +75,9 @@ go install .
    <br/>
 
 1. Output file <br/><br/>
-   |![Timeline](demo/timeline.png)|
-   -
+   | ![Timeline](demo/timeline.png) |
+   |--------------------------------|
+
    <br/>
 
 # Supported Format
