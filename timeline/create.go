@@ -161,6 +161,7 @@ func convertJSDate(t time.Time) (template.JS, error) {
 
 // convertDate convert string in YYYY-MM-DD format to time.Time
 func convertDate(d string) time.Time {
+	d = strings.TrimSpace(d)
 	t, _ := now.Parse(d)
 	return t
 }
